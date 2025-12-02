@@ -1,9 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Financial Tracker Module
-A console-based application for tracking personal finances
-"""
+
 
 import json
 import os
@@ -12,14 +7,9 @@ from typing import List, Dict, Optional, Tuple
 
 
 class FinancialTracker:
-    """
-    A class to track personal finances including budget and expenses.
-    """
     
     def __init__(self, data_file: str = "financial_data.json"):
-        """
-        Initialize FinancialTracker with data file path.
-        """
+          
         self.data_file = data_file
         self.data = {"budget": 0.0, "expenses": []}
         self._load_data()
